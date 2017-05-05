@@ -1,0 +1,92 @@
+{
+  "contract_name": "EtherFunding",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "etherGoal",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "deadline",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "donorBalances",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "projectName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "donate",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "name",
+          "type": "bytes32"
+        },
+        {
+          "name": "duration",
+          "type": "uint256"
+        },
+        {
+          "name": "goal",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x606060408190526000805580806101fb8139810160409081528151602083015191909201515b60038054600160a060020a03191633600160a060020a03161790556000838155428301600155600282905534111561007357600160a060020a03331660009081526004602052604090203490555b5b5050505b610174806100876000396000f300606060405263ffffffff60e060020a6000350416630643c516811461005057806329dcb0cf1461006f5780637b8c8de11461008e5780639a33e300146100c6578063ed88c68e146100e5575b610000565b346100005761005d6100ef565b60408051918252519081900360200190f35b346100005761005d6100f5565b60408051918252519081900360200190f35b346100005761005d73ffffffffffffffffffffffffffffffffffffffff600435166100fb565b60408051918252519081900360200190f35b346100005761005d61010d565b60408051918252519081900360200190f35b6100ed610113565b005b60025481565b60015481565b60046020526000908152604090205481565b60005481565b60003411156101455773ffffffffffffffffffffffffffffffffffffffff331660009081526004602052604090203490555b5b5600a165627a7a72305820f7c4168af4da653f235ff8b480cc156fee993d0c57b22fe0e14c61050db0825e0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1493991026540
+}
