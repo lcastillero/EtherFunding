@@ -23,7 +23,7 @@ contract EtherFunding {
         }
     }
 
-    function withdraw(address donor)  returns (uint) {
+    function withdraw(address donor)  returns (uint successful) {
         if(block.timestamp < deadline ) {
             return 1;
         }
