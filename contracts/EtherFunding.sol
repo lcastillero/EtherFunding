@@ -4,7 +4,7 @@ contract EtherFunding {
     bytes32 public projectName;
     uint public deadline;
     uint public etherGoal;
-    address owner;
+    address public owner;
     mapping(address => uint) public donorBalances;
 
     function EtherFunding(bytes32 name, uint duration, uint goal) payable {
@@ -23,7 +23,7 @@ contract EtherFunding {
         }
     }
 
-    function withdraw(address donor)  returns (uint) {
+    function withdraw(address donor)  returns (uint successful) {
         if(block.timestamp < deadline ) {
             return 1;
         }
